@@ -292,7 +292,7 @@ void Sky::catch_command(bool& active) {
                     std::cout<<"\nNew declination is set.\n\n";
                 }
                 else if(new_a>=12&&new_a<=90) {
-                    angle = new_a*PI/180;
+                    angle = tan(new_a*PI/360);
                     std::cout<<"\nNew declination is set.\n\n";
                 }
                 else std::cout<<"\nYou have entered data in inappropriate format! Please try again.\n\n";
