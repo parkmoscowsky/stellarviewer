@@ -289,11 +289,11 @@ void Sky::catch_command(bool& active) {
                 double new_a = std::stoi(a);
                 if(new_a>0&&new_a<12) {
                     angle = 0.1;
-                    std::cout<<"\nNew declination is set.\n\n";
+                    std::cout<<"\nNew viewing angle is set.\n\n";
                 }
                 else if(new_a>=12&&new_a<=90) {
                     angle = tan(new_a*PI/360);
-                    std::cout<<"\nNew declination is set.\n\n";
+                    std::cout<<"\nNew viewing angle is set.\n\n";
                 }
                 else std::cout<<"\nYou have entered data in inappropriate format! Please try again.\n\n";
             } catch(...) {
